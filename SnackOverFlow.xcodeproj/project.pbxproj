@@ -13,6 +13,8 @@
 		32A0D6B02BE8EC6D00262448 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32A0D6AF2BE8EC6D00262448 /* Assets.xcassets */; };
 		32A0D6B32BE8EC6D00262448 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32A0D6B22BE8EC6D00262448 /* Preview Assets.xcassets */; };
 		32A0D6C02BE8F05500262448 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A0D6BF2BE8F05500262448 /* WelcomeView.swift */; };
+		32AA91122BF0FE89007C3AC2 /* WelcomePageButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32AA91112BF0FE89007C3AC2 /* WelcomePageButtons.swift */; };
+		32AA91142BF0FEDC007C3AC2 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32AA91132BF0FEDC007C3AC2 /* Strings.swift */; };
 		32AE04662BEB7F9F004C26DB /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32AE04652BEB7F9F004C26DB /* Images.swift */; };
 		32EA8F312BEE38E900DE5099 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32EA8F302BEE38E900DE5099 /* Colors.swift */; };
 		32FBF9092BEA43D100829DE4 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32FBF9082BEA43D100829DE4 /* Colors.xcassets */; };
@@ -27,6 +29,8 @@
 		32A0D6AF2BE8EC6D00262448 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		32A0D6B22BE8EC6D00262448 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		32A0D6BF2BE8F05500262448 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		32AA91112BF0FE89007C3AC2 /* WelcomePageButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomePageButtons.swift; sourceTree = "<group>"; };
+		32AA91132BF0FEDC007C3AC2 /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		32AE04652BEB7F9F004C26DB /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 		32EA8F302BEE38E900DE5099 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		32FBF9082BEA43D100829DE4 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
@@ -49,6 +53,7 @@
 			children = (
 				32AE04652BEB7F9F004C26DB /* Images.swift */,
 				3240615D2BEE3C5C00372E05 /* Icons.swift */,
+				32AA91132BF0FEDC007C3AC2 /* Strings.swift */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
@@ -127,6 +132,7 @@
 		32A0D6BD2BE8EF2E00262448 /* Products */ = {
 			isa = PBXGroup;
 			children = (
+				32AA910E2BF0FE43007C3AC2 /* Widgets */,
 			);
 			path = Products;
 			sourceTree = "<group>";
@@ -137,6 +143,22 @@
 				32A0D6BF2BE8F05500262448 /* WelcomeView.swift */,
 			);
 			path = WelcomePage;
+			sourceTree = "<group>";
+		};
+		32AA910E2BF0FE43007C3AC2 /* Widgets */ = {
+			isa = PBXGroup;
+			children = (
+				32AA91102BF0FE77007C3AC2 /* Buttons */,
+			);
+			path = Widgets;
+			sourceTree = "<group>";
+		};
+		32AA91102BF0FE77007C3AC2 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				32AA91112BF0FE89007C3AC2 /* WelcomePageButtons.swift */,
+			);
+			path = Buttons;
 			sourceTree = "<group>";
 		};
 		32EA8F2F2BEE38D200DE5099 /* Extensions */ = {
@@ -231,9 +253,11 @@
 			files = (
 				32A0D6AE2BE8EC6C00262448 /* ContentView.swift in Sources */,
 				32EA8F312BEE38E900DE5099 /* Colors.swift in Sources */,
+				32AA91142BF0FEDC007C3AC2 /* Strings.swift in Sources */,
 				3240615E2BEE3C5C00372E05 /* Icons.swift in Sources */,
 				32AE04662BEB7F9F004C26DB /* Images.swift in Sources */,
 				32A0D6C02BE8F05500262448 /* WelcomeView.swift in Sources */,
+				32AA91122BF0FE89007C3AC2 /* WelcomePageButtons.swift in Sources */,
 				32A0D6AC2BE8EC6C00262448 /* SnackOverFlowApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
