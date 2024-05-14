@@ -3,7 +3,7 @@ import SwiftUI
 struct WelcomeView: View {
     var body: some View {
         ZStack {
-            Image(Images.cover.rawValue)
+            Image(Images.cover.rawValue).resizable()
             Color.black.opacity(0.3)
             bodyView()
         }
@@ -16,18 +16,22 @@ struct WelcomeView: View {
 
 private struct bodyView: View {
     var body: some View {
-        VStack {
-            ZStack {
-                Image(Icons.appWelcomeLogo.rawValue)
-            }.frame(width: 400, height: 400, alignment: .center)
+        GeometryReader { geometry in
             VStack {
+                Spacer().frame(height: geometry.dw(width: 0.2))
+                Image(Icons.appWelcomeLogo.rawValue)
+                Spacer().frame(height: geometry.dw(width: 0.2))
                 facebookButton()
-                googleButton()
+                googleButton().padding(.vertical,5)
                 appleButton()
-            }.frame(width: 400, height: 200, alignment: .center)
-            ZStack{
+                Spacer().frame(height: geometry.dw(width: 0.05))
+                Rectangle()
+                    .foregroundColor(.clear)
+                    .frame(width: 230.0, height: 2.0)
+                    .background(Color(white: 1.0, opacity: 0.3))
+                Spacer().frame(height: geometry.dw(width: 0.05))
                 emailButton()
-            }.frame(width: 400, height: 100, alignment: .center)
+            }
         }
     }
 }
