@@ -4,7 +4,7 @@ struct WelcomeView: View {
     var body: some View {
         ZStack {
             Image(Images.cover.rawValue)
-            Color.black_.opacity(0.3)
+            Color.black.opacity(0.3)
             bodyView()
         }
     }

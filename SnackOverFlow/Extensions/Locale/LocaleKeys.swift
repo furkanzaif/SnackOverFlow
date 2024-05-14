@@ -12,6 +12,8 @@ struct LocaleKeys {
 }
 
 extension String {
+    /// <#Description#>
+    /// - Returns: <#description#>
     func locale() -> LocalizedStringKey {
         return LocalizedStringKey(self)
     }
