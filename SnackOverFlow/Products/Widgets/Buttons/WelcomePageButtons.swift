@@ -7,7 +7,7 @@ struct facebookButton : View {
         } label: {
             HStack {
                 Image(Icons.facebookLogo.rawValue)
-                Text(StringItems.facebookLogin.rawValue)
+                Text(LocaleKeys.Auth.facebookLogin.rawValue.locale())
                 Spacer()
             }.padding(EdgeInsets(top: 15.0, leading: 15.0, bottom: 15.0, trailing: 15.0))
                 .frame(width: 370, height:60)
@@ -24,7 +24,7 @@ struct googleButton : View {
         } label: {
             HStack {
                 Image(Icons.googleLogo.rawValue)
-                Text(StringItems.googleLogin.rawValue)
+                Text(LocaleKeys.Auth.googleLogin.rawValue.locale())
                 Spacer()
             }.padding(EdgeInsets(top: 15.0, leading: 15.0, bottom: 15.0, trailing: 15.0))
                 .frame(width: 370, height:60)
@@ -41,7 +41,7 @@ struct appleButton : View {
         } label: {
             HStack {
                 Image(Icons.appleLogo.rawValue)
-                Text(StringItems.appleLogin.rawValue)
+                Text(LocaleKeys.Auth.appleLogin.rawValue.locale())
                 Spacer()
             }.padding(EdgeInsets(top: 15.0, leading: 15.0, bottom: 15.0, trailing: 15.0))
                 .frame(width: 370, height:60)
@@ -57,7 +57,7 @@ struct emailButton : View {
         Button {
         } label: {
             HStack {
-                Text(StringItems.emailLogin.rawValue)
+                Text(LocaleKeys.Auth.emailLogin.rawValue.locale())
                 Spacer()
             }.padding(EdgeInsets(top: 15.0, leading: 115.0, bottom: 15.0, trailing: 0.0))
                 .frame(width: 370, height:60)
